@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Database Management System</title>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300,700,800" rel="stylesheet" media="screen">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+  <link href="color/default.css" rel="stylesheet" media="screen">
+
+  <!-- =======================================================
+    Theme Name: Alstar
+    Theme URL: https://bootstrapmade.com/alstar-free-parallax-bootstrap-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle nav</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <!-- Logo text or image -->
+        <a class="navbar-brand" href="index.html">Database Management System</a>
+
+      </div>
+      <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li class="current"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#portfolio">Works</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- intro area -->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="item active">
+            <div class="carousel-background"><img src="img/bg2.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animated fadeInDown">Database Management System</h2>
+                <p class="animated fadeInUp">Sistem manajemen basis data (Bahasa Inggris: database management system, DBMS), 
+                  atau kadang disingkat SMBD, adalah suatu sistem atau perangkat lunak yang dirancang untuk mengelola suatu basis data dan 
+                  menjalankan operasi terhadap data yang diminta banyak pengguna. Contoh tipikal SMBD adalah akuntansi, sumber daya manusia, 
+                  dan sistem pendukung pelanggan, SMBD telah berkembang menjadi bagian standar di bagian pendukung (back office) 
+                  suatu perusahaan. Contoh SMBD adalah Oracle, SQL server 2000/2003, MS Access, MySQL dan sebagainya. DBMS merupakan 
+                  perangkat lunak yang dirancang untuk dapat melakukan utilisasi dan mengelola koleksi data dalam jumlah yang besar. 
+                  DBMS juga dirancang untuk dapat melakukan manipulasi data secara lebih mudah. Sebelum adanya DBMS, data pada umumnya 
+                  disimpan dalam bentuk flat file, yaitu file teks yang ada pada sistem operasi. Sampai sekarangpun masih ada aplikasi 
+                  yang menyimpan data dalam bentuk flat secara langsung. </p>
+                <a href="#about" class="btn-get-started animated fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <!-- DML -->
+  <section id="about" class="home-section bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div class="section-heading">
+            <h2>DML (Data Manipulation Language)</h2>
+            <div class="heading-line"></div>
+            <p>DML atau Data Manipulation Language adalah kumpulan perintah SQL yang berhubungan dengan pekerjaan mengolah data di dalam table.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row wow fadeInUp">
+        <div class="col-md-6 about-img">
+          <img src="img/db2.jpg" alt="">
+        </div>
+
+        <div class="col-md-6 content">
+          <p>INSERT : Perintah ini digunakan untuk menyisipkan atau memasukkan data baru ke dalam tabel. Penggunaannya setelah database dan tabel selesai dibuat.
+            Contoh :
+            Insert into mahasiswa values (“08052926”, “Frenky”,”70”);</p>
+          <p>SELECT : Perintah ini digunakan untuk mengambil data atau menampilkan data dari satu tabel atau beberapa tabel dalam relasi. Data yang diambil dapat kita tampilkan dalam layar prompt MySQL secara langsung maupun ditampilkan pada tampilan aplikasi.
+            Contoh :
+            Select nama_mahasiswa from mahasiswa where nilai = 70;</p>
+          <p>UPDATE : Perintah ini digunakan untuk memperbarui data lama menjadi data terkini. Jika Anda memiliki data yang salah atau kurang up to date dengan kondisi sekarang, maka dapat diubah isi datanya menggunakan perintah UPDATE.
+	          Contoh: mahasiswa set nim = ‘08052926’ = 08052927;</p>
+	        <p>DELETE : Perintah ini digunakan untuk menghapus data dari tabel. Biasanya data yang dihapus merupakan data yang sudah tidak diperlukan lagi. Pada saat menghapus data, perintah yang telah dijalankan tidak dapat digagalkan, sehingga data yang telah hilang tidak dapat dikembalikan lagi
+	          Contoh : delete form mahasiswa;
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DDL -->
+  <section id="services" class="home-section bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div class="section-heading">
+            <h2>DDL (Data Data Definition Language)</h2>
+            <div class="heading-line"></div>
+            <p> DDL atau Data Definition Language adalah kumpulan perintah SQL yang dapat digunakan untuk membuat dan mengubah struktur dan definisi tipe data dari objek-objek database seperti tabel, index, trigger, view, dan lain-lain.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="carousel-service" class="service carousel slide">
+
+            <!-- slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="row">
+                  <div class="col-sm-12 col-md-offset-1 col-md-6">
+                    <div class="wow bounceInLeft">
+                      <p>CREATE : Perintah ini digunakan untuk membuat, termasuk di antaranya membuat database baru, tabel baru, view baru, dan kolom.
+                        Contoh : Create table mahasiswa (nim  char(8) primary key,nama_mahasiswa  varchar(20),nilai integer(3),alamat  varchar(25);</p>
+                      <p>ALTER : Perintah ini digunakan untuk mengubah struktur tabel yang telah dibuat. Pekerjaannya mencakup mengganti nama tabel, menambah kolom, mengubah kolom, menghapus kolom, maupun memberikan atribut pada kolom.
+                        Contoh : alter table mahasiswa rename wisudawan;</p>
+                      <p>DROP : Perintah ini digunakan untuk menghapus database dan tabel.
+                        Contoh : Alter table ‘mahasiswa’ drop ‘alamat’;
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <div class="screenshot wow bounceInRight">
+                      <img src="img/data.jpg" class="img-responsive" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-12 col-md-offset-1 col-md-6">
+                    <div class="wow bounceInLeft">
+                      <h4>Brand Identity</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <div class="screenshot wow bounceInRight">
+                      <img src="img/screenshots/2.png" class="img-responsive" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-sm-12 col-md-offset-1 col-md-6">
+                    <div class="wow bounceInLeft">
+                      <h4>Web & Mobile Apps</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <div class="screenshot wow bounceInRight">
+                      <img src="img/screenshots/3.png" class="img-responsive" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+  
+  <!-- Editor -->
+  <section id="team" class="home-section bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <div class="section-heading">
+            <h2>EDITOR</h2>
+            <div class="heading-line"></div>
+            <p>Untuk masa depan yang lebih cerah. Berdoa dan dibarengi Kerja keras. Semua akan indah pada wakutnya. </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-20 col-sm-3 col-md-3 col-lg-4" data-wow-delay="0.3s">
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-4">
+          <div class="box-team wow bounceInUp"  data-wow-delay="0.1s">
+            <img src="img/img.jpg" alt="" class="img-circle img-responsive" />
+            <hr><h4>Aldias Ibnu Habib</h4>
+            <p>Informatika 17</p>
+          </div>
+        </div>
+  </section>
+
+</body>
+</html>
